@@ -35,7 +35,7 @@ struct Projector : Service::Outlet
   {
 
     if (projector->timeVal() > 10000)
-    { // check time elapsed since last update, must be greater than 5 seconds
+    { // check time elapsed since last update, must be greater than 10 seconds
 
       // Query projector power state
       projectorSerial->print("\r*pow=?#\r");
